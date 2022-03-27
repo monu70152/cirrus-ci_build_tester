@@ -3,7 +3,7 @@ cd /tmp/rom
 
 # Normal build steps
 . build/envsetup.sh
-lunch aosp_X00TD-userdebug
+lunch lineage_merlinx-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -48,8 +48,8 @@ kill %1
 
 
 # Upload rom zip file if succeed to build! Send notification to tg! And send shell to tg if build fails!
-if [ -e out/target/product/X00TD/INA.*.zip ]; then
-send_zip=$(up out/target/product/X00TD/INA.*.zip) && tg $id "Build Succeed!
+if [ -e out/target/product/merlinx/INA.*.zip ]; then
+send_zip=$(up out/target/product/merlinx/INA.*.zip) && tg $id "Build Succeed!
 $send_zip"
 fi
 ccache -s # Let's print ccache statistics finally
