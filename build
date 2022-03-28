@@ -42,7 +42,7 @@ tg(){
 id=-1001429926659
 
 # compile plox
-brunch merlinx  &
+brunch merlinx -j8 &
 sleep 185m
 kill %1
 
