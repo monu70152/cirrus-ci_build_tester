@@ -5,7 +5,8 @@ cd /tmp/rom
 
 ##some of my work
 git config --global user.name "Dev786s"
-git config --global user.email "sahilindal0786@gmail.com "
+git config --global user.email "dev0786si@gmail.com"
+
 
 # Repo init command
 repo init -q --no-repo-verify --depth=1 -u https://github.com/ProjectSakura/android.git -b 12.x -g default,-mips,-darwin,-notdefault
