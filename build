@@ -3,7 +3,7 @@ cd /tmp/rom
 
 # Normal build steps
 . build/envsetup.sh
-lunch spark_merlinx-userdebug
+lunch aosp_merlinx-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -42,7 +42,7 @@ tg(){
 id=-1001429926659
 
 # compile plox
-make bacon -j8 &
+mka bacon -j8 &
 sleep 185m
 kill %1
 
