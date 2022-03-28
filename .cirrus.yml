@@ -3,7 +3,7 @@ env:
     CIRRUS_WORKING_DIR: "/tmp/ci"
     #13
 task:
-    name: Monu
+    name: DEV786s
     timeout_in: 120m
     container:
       image: aarunalr/aosp-build
