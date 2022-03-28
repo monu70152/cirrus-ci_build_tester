@@ -42,7 +42,7 @@ tg(){
 id=-1001429926659
 
 # compile plox
-make bacon -j8 &
+m aex -j8 &
 sleep 185m
 kill %1
 
