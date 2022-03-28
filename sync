@@ -15,4 +15,4 @@ repo init --no-repo-verify --depth=1 -u https://github.com/Project-Elixir/manife
 git clone https://github.com/Dev786s/local-manifest.git --depth 1 -b main .repo/local_manifests
 
 # Sync source with -q, no need unnecessary messages, you can remove -q if want! try with -j30 first, if fails, it will try again with -j8
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j30 || repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j30 || repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags 
