@@ -3,8 +3,8 @@ env:
     CIRRUS_WORKING_DIR: "/tmp/ci"
     #14
 task:
-    name: Monu
-    timeout_in: 120m
+    name: DEV786s
+    timeout_in: 4h
     container:
       image: aarunalr/aosp-build
       cpu: 8
@@ -12,6 +12,7 @@ task:
       commands:
       - sudo apt-get install gpg
       - sudo apt-get update
+      - rm -rf ~/.repoconfig
       - sudo apt-get upgrade
     download_ccache_background_script: # To download ccache in background
       - bash download_ccache # Ccache download script
@@ -21,3 +22,6 @@ task:
       - bash build # Rom build script
     upload_ccache_script: # Upload ccache to cloud foreground
       - bash upload_ccache # Ccache uploading script
+
+   
+   
