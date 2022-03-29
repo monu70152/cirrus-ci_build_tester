@@ -15,7 +15,7 @@ ccache -z
 make api-stubs-docs || echo no problem, we need ccache
 make system-api-stubs-docs || echo no problem we need ccache
 make test-api-stubs-docs || echo no problem, we need ccache
-brunch merlinx -j$(nproc --all) & # dont remove that '&'
+brunch merlinx -j10 & # dont remove that '&'
 sleep 185m
 kill %1
 ccache -s
@@ -42,7 +42,7 @@ tg(){
 id=-1001429926659
 
 # compile plox hmm ok
-brunch merlinx -j$(nproc --all) &
+brunch merlinx -j8 &
 sleep 185m
 kill %1
 
