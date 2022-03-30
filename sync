@@ -3,7 +3,7 @@
 mkdir -p /tmp/rom # Where to sync sources
 cd /tmp/rom
 
-##some of my work
+##some of my wor
 git config --global user.name "Dev786s"
 git config --global user.email "dev0786si@gmail.com"
 
