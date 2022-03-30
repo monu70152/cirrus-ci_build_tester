@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /tmp/rom
 
-# Normal build step
+# Normal build steps
 . build/envsetup.sh
 lunch aosp_merlinx-userdebug
 export CCACHE_DIR=/tmp/ccache
