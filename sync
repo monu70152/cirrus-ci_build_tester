@@ -8,7 +8,7 @@ git config --global user.name "Dev786s"
 git config --global user.email "dev0786si@gmail.com"
 
 # Repo init command
-repo init -q --no-repo-verify --depth=1 -u https://github.com/Dev786s/manifest.git -b snowcone -g default,-mips,-darwin,-notdefault
+repo init -q --no-repo-verify --depth=1 -u https://github.com/PixelPlusUI-SnowCone/manifest -b snowcone -g default,-mips,-darwin,-notdefault
 
 # Local manifest
 git clone https://github.com/Dev786s/local-manifest.git --depth 1 -b Android12 .repo/local_manifests
